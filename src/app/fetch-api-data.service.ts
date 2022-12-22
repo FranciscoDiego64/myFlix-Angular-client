@@ -122,7 +122,7 @@ export class FetchApiDataService {
       .pipe(map(this.extractResponseData), catchError(this.handleError));
   }
 
-    // Delete a movie from the favorite movies
+    // Delete a movie from favorite movies list
     removeFavoriteMovie(MovieID: string): Observable<any> {
       const username = localStorage.getItem('user');
       const token = localStorage.getItem('token');
